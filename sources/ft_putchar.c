@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dajeon <dajeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/06 11:59:39 by dajeon            #+#    #+#             */
-/*   Updated: 2023/01/06 14:05:17 by dajeon           ###   ########.fr       */
+/*   Created: 2023/01/06 11:33:53 by dajeon            #+#    #+#             */
+/*   Updated: 2023/01/09 15:11:23 by dajeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <unistd.h>
 
-int	ft_putstr(const char *s)
+int	ft_putchar(const char c)
 {
-	int	count;
-	int	temp;
-
-	count = 0;
-	while (*s)
-	{
-		temp = ft_putchar(*(s++));
-		if (temp == -1)
-			return (-1);
-		count += temp;
-	}
-	return (count);
+	return (write(1, &c, 1));
 }

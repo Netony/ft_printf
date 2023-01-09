@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_abs.c                                           :+:      :+:    :+:   */
+/*   base.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dajeon <dajeon@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/06 11:34:29 by dajeon            #+#    #+#             */
-/*   Updated: 2023/01/06 14:40:16 by dajeon           ###   ########.fr       */
+/*   Created: 2023/01/09 11:05:51 by dajeon            #+#    #+#             */
+/*   Updated: 2023/01/09 13:54:00 by dajeon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_abs(const int n)
-{
-	if (n < 0)
-		return (-1 * n);
-	else
-		return (n);
-}
+#ifndef BASE_H
+
+# define DECIMAL "0123456789"
+# define CAP_HEXA "0123456789ABCDEF"
+# define HEXA "0123456789abcdef"
+
+# define LONG_MAX 9223372036854775807
+
+#endif
