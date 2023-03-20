@@ -6,7 +6,7 @@
 #    By: dajeon <dajeon@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/06 11:40:14 by dajeon            #+#    #+#              #
-#    Updated: 2023/01/09 14:49:49 by dajeon           ###   ########.fr        #
+#    Updated: 2023/03/20 17:42:19 by dajeon           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC = cc
 RM = rm
 AR = ar
 
-CFLAGS = -Wall -Wextra -Werror -I includes
+CFLAGS = -Wall -Wextra -Werror -I sources
 RMFLAGS = -rf
 ARFLAGS = crus
 
